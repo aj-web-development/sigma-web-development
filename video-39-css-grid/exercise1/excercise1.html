@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1 - Grid</title>
+    <style>
+      .logo {
+        height: 40px;
+        width: 23px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Segoe UI';
+        font-size: 14px;
+      }
+
+      .logo img {
+        width: 100px;
+      }
+
+      .right ul {
+        display: flex;
+        gap: 34px;
+      }
+
+      .right ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+
+      .right ul li span {
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      section.first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 50px;
+        font-family: sans-serif;
+      }
+
+      section.first span {
+        font-size: 25px;
+      }
+
+      section.first p {
+        font-size: 14px;
+        width: 44vw;
+        text-align: center;
+      }
+
+      .btn {
+        background: #00b6d1;
+        padding: 6px 10px;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        margin: 12px 0;
+        cursor: pointer;
+      }
+
+      .green {
+        background: #5cb85c;
+      }
+
+      section.first div button {
+        background: #00b6d1;
+        padding: 10px 12px;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .second .small {
+        font-size: 12px;
+      }
+
+      section.second {
+        max-width: 85vw;
+        margin: auto;
+      }
+
+      section.second .item {
+        padding: 23px;
+        background: #f9f9f9;
+        border-radius: 13px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+
+      .item-lang {
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 36px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+      }
+
+      .download :nth-child(2) {
+        font-size: 23px;
+      }
+
+      .download {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: sans-serif;
+        margin-bottom: 30px;
+      }
+
+      .download img {
+        width: 35px;
+        height: 35px;
+        padding: 0px 12px;
+      }
+
+      @media screen and (max-width: 945px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="logo.png" alt="Logo" />
+        </div>
+        <div class="right">
+          <ul class="">
+            <li class="">
+              <span>Products </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                color="currentColor"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                />
+              </svg>
+            </li>
+            <li class="">
+              <span>Pricing </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                color="currentColor"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                />
+              </svg>
+            </li>
+            <li class="">
+              <span>Resources </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                color="currentColor"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                />
+              </svg>
+            </li>
+            <li class="">
+              <span>About us </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                color="currentColor"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                />
+              </svg>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="first">
+        <span>Download <b>UltraEdit</b> for Windows</span>
+        <p>
+          Download and try UltraEdit beore you buy it! This download includes
+          full windows version of the text editor
+        </p>
+        <div>
+          <button class="btn">DOWNLOAD MAC OR LINUX VERSION</button>
+        </div>
+      </section>
+
+      <section class="second">
+        <div class="download">
+          <img src="img1.svg" alt="" />
+          <span>Download UltraEdit</span>
+          <span class="small">v2026.1(released 02/16/2026) | Hotfix</span>
+        </div>
+
+        <div class="grid">
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue">Download 32-bit</button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue">Download 32-bit</button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue">Download 32-bit</button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue">Download 32-bit</button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue">Download 32-bit</button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue">Download 32-bit</button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue">Download 32-bit</button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue">Download 32-bit</button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue">Download 32-bit</button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue">Download 32-bit</button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+          <div class="item">
+            <div class="item-lang">English</div>
+            <button class="btn blue">Download 32-bit</button>
+            <button class="btn green">Download 64-bit</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
