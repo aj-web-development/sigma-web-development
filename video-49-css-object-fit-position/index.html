@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Object Fit and Position</title>
+    <style>
+      .container {
+        width: 434px;
+        height: 444px;
+        border: 2px solid black;
+        /* background-color: azure; */
+        /* background-position: top right; */
+        /* background-position: bottom left; */
+        background-image: url('https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg');
+      }
+
+      img {
+        width: 434px;
+        height: 444px;
+        /* object-fit: contain; */
+        object-fit: cover;
+        /* object-position: bottom left; */
+        /* object-fit: fill; */
+        /* object-fit: scale-down; */
+        object-position: 50% 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img
+        src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg"
+        alt=""
+      /> -->
+    </div>
+  </body>
+</html>
