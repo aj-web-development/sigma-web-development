@@ -31,9 +31,6 @@ body {
   width: 110px;
 }
 
-.home {
-}
-
 .home ul li {
   list-style: none;
   display: flex;
@@ -224,10 +221,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 14px;
-}
-
-.song-list ul {
-  /* padding: 0 12px; */
 }
 
 .song-list ul li {
