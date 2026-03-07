@@ -1,3 +1,4 @@
 .vscode/settings.json
 node_modules/
 react/.vscode/settings.json
+next-js/.vscode/settings.json
