@@ -1,0 +1,15 @@
+import Link from 'next/link';
+
+const NotFound = () => {
+  return (
+    <div className='text-center'>
+      <h2 className='text-4xl font-bold mb-4'>Not Found</h2>
+      <p className='text-lg text-gray-600'>Could not find requested resource</p>
+      <Link href='/' className='text-amber-500'>
+        Return Home
+      </Link>
+    </div>
+  );
+};
+
+export default NotFound;
